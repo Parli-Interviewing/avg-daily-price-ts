@@ -14,7 +14,7 @@ Given a list (array) of objects where each object has a:
 
 Implement the function `avgDailyPrice` (in [`avgDailyPrice.ts`](src/avgDailyPrice.ts)) to return a list of objects of the same structure, where each object has the date of the first item for that day and the average price for that entire day.
 
-The utility function `isSameDay` is available for you to use to check if 2 timestamps happened on the same day.
+The utility function `getDayStartTime` is available for you to use. It takes a timestamp and returns the timestamp representing the start of that day.
 
 ## Assumptions
 

@@ -8,10 +8,11 @@ export const avgDailyPrice = (list: PriceItem[]): PriceItem[] => {
   return []
 }
 
-const isSameDay = (a: number, b: number) => {
-  const aDate = new Date(a)
-  const bDate = new Date(b)
-  return aDate.getUTCFullYear() === bDate.getUTCFullYear() &&
-    aDate.getUTCMonth() === bDate.getUTCMonth() &&
-    aDate.getUTCDate() === bDate.getUTCDate()
+const getDayStartTime = (time: number) => {
+  const date = new Date(time);
+  date.setUTCMilliseconds(0);
+  date.setUTCSeconds(0);
+  date.setUTCMinutes(0);
+  date.setUTCHours(0);
+  return date.getTime();
 }
