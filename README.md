@@ -3,6 +3,7 @@
 - Run `npm install` to install the dependencies.
 - Run `npm run test` to run the tests in watch mode.
 - Add code to the relevant source code files in the `src` directory and save to re-run the tests.
+- _**Console logs will be printed at the beginning of the test output in the terminal below.**_
 
 # Challenge spec
 
@@ -11,7 +12,9 @@ Given a list (array) of objects where each object has a:
 - `price` - price (non-negative number)
 - Example: `{ date: 1704085200000, price: 10.5 }`
 
-Implement the function `avgDailyPrice` (in `avgDailyPrice.ts`) to return a list of objects of the same structure, where each object has the date of the first item for that day and the average price for that entire day.
+Implement the function `avgDailyPrice` (in [`avgDailyPrice.ts`](src/avgDailyPrice.ts)) to return a list of objects of the same structure, where each object has the date of the first item for that day and the average price for that entire day.
+
+The utility function `isSameDay` is available for you to use to check if 2 timestamps happened on the same day.
 
 ## Assumptions
 
