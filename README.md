@@ -9,10 +9,10 @@
 
 Given a list (array) of objects where each object has a:
 - `date` - non-negative integer timestamp in milliseconds
-- `price` - price (non-negative number)
+- `price` - non-negative number
 - Example: `{ date: 1704085200000, price: 10.5 }`
 
-Implement the function `avgDailyPrice` (in [`avgDailyPrice.ts`](src/avgDailyPrice.ts)) to return a list of objects of the same structure, where each object has the date of the first item for that day and the average price for that entire day.
+Implement the function `avgDailyPrice` (in [`avgDailyPrice.ts`](src/avgDailyPrice.ts)) to return a list of objects **of the same structure**, where each object includes the `date` of the ***first item*** for that day and the average `price` for that entire day.
 
 The utility function `getDayStartTime` is available for you to use. It takes a timestamp and returns the timestamp representing the start of that day.
 
